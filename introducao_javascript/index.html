@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minha página</title>
+        <script type="application/javascript" src="./main.js"></script>
+    </head>
+    <body onload="loadPage()">
+        <button onclick="clickButton()">Clicar aqui</button>
+        <h3 id="agradecimento"></h3>
+        <p id="mouseoverout" onmouseover="replaceMouseOver(this)" onmouseout="replaceMouseOut(this)">Passe o mouse aqui</p>
+        <p id="mouseoverout1" onmouseover="replaceMouseOver(this)" onmouseout="replaceMouseOut(this)">Passe o mouse aqui</p>
+        <select name="options" id="options" onchange="onChangeOptions(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+        <div>
+            Opção Selecionada: <span id="valueOption">Selecione uma opção!</span>
+        </div>
+    </body>
+</html>
